@@ -142,7 +142,7 @@ export function renderThankYouPage(container, referralCode = null) {
               <h2 class="text-[18px] sm:text-[20px] font-semibold text-[#111111]">Quests</h2>
               <p class="text-[12px] sm:text-[13px] text-[#6B7280]">Complete actions to earn more points</p>
             </div>
-            <span class="text-[11px] sm:text-[12px] text-[#6B7280] font-medium">Point conversion: 100 pts = $1</span>
+            <span class="text-[11px] sm:text-[12px] text-[#6B7280] font-medium">100 pts = $1</span>
           </div>
           <div class="space-y-3">
             ${questsHtml}

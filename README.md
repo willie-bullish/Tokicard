@@ -26,3 +26,5 @@ npm run dev  # Runs on http://localhost:3000
 - Email: Nodemailer (Gmail SMTP)
 
 See `frontend/README.md` and `backend/README.md` for detailed docs.
+
+Made by Willie_Bullish

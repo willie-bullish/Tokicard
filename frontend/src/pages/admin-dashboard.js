@@ -307,6 +307,7 @@ function renderQuests(quests) {
       }
     });
   });
+  
 
   document.querySelectorAll('.delete-quest-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {

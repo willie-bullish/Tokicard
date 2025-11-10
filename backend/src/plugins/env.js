@@ -9,6 +9,8 @@ const REQUIRED_VARS = [
   'SMTP_USER',
   'SMTP_PASSWORD',
   'SMTP_FROM_NAME',
+  'ADMIN_USERNAME',
+  'ADMIN_PASSWORD',
 ];
 
 export function loadEnv() {
@@ -26,6 +28,10 @@ export function loadEnv() {
     passwordResetExpiryMinutes: Number(process.env.PASSWORD_RESET_EXPIRY_MINUTES || '60'),
     frontendOrigin: process.env.FRONTEND_ORIGIN,
     nodeEnv: process.env.NODE_ENV || 'development',
+    admin: {
+      username: process.env.ADMIN_USERNAME,
+      password: process.env.ADMIN_PASSWORD,
+    },
     smtp: {
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT || '587'),

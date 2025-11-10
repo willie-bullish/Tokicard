@@ -8,6 +8,7 @@ import dbPlugin from './plugins/db.js';
 import waitlistRoutes from './routes/waitlist.js';
 import authRoutes from './routes/auth.js';
 import questRoutes from './routes/quests.js';
+import adminRoutes from './routes/admin.js';
 
 const env = loadEnv();
 
@@ -40,6 +41,7 @@ fastify.decorate('authenticate', async function authenticate(request, reply) {
 await fastify.register(waitlistRoutes, { prefix: '/api' });
 await fastify.register(authRoutes, { prefix: '/api' });
 await fastify.register(questRoutes, { prefix: '/api' });
+await fastify.register(adminRoutes, { prefix: '/api' });
 
 fastify.get('/health', async (request, reply) => {
   try {

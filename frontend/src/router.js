@@ -4,6 +4,8 @@ import { renderLoginPage } from './pages/login.js';
 import { renderVerifyPage } from './pages/verify.js';
 import { renderForgotPasswordPage } from './pages/forgot-password.js';
 import { renderResetPasswordPage } from './pages/reset-password.js';
+import { renderAdminLoginPage } from './pages/admin-login.js';
+import { renderAdminDashboard } from './pages/admin-dashboard.js';
 
 function normalizeReferral(ref) {
   if (!ref) return null;
@@ -49,6 +51,16 @@ export function initRouter() {
   if (path === '/register') {
     const referral = normalizeReferral(params.get('ref'));
     renderWaitlistPage(root, referral);
+    return;
+  }
+
+  if (path === '/admin') {
+    renderAdminLoginPage(root);
+    return;
+  }
+
+  if (path === '/admin/dashboard') {
+    renderAdminDashboard(root);
     return;
   }
 

@@ -1,6 +1,6 @@
-# Tokicard - Waitlist & Referral System
+# Tokicard - Early Access
 
-Full-stack waitlist system with referral tracking and quest-based points.
+Full-stack early access system with User authentication, referral tracking and quest-based points.
 
 ## Quick Start
 
